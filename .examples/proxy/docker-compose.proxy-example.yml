@@ -4,7 +4,7 @@ version: "3.8"
 services:
   zammad-nginx:
     environment:
-      - VIRTUAL_HOST=helpdesk.domain.tld
+      - VIRTUAL_HOST=ticket.lopinga.at
       - NGINX_SERVER_SCHEME=https
     networks:
       - default
