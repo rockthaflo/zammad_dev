@@ -47,19 +47,6 @@ x-shared:
 
 services:
 
-  zammad-nginx:
-    environment:
-      - VIRTUAL_HOST=ticket.lopinga.ch
-      - NGINX_SERVER_SCHEME=https
-    networks:
-      - default
-      - proxy_2_zammad
-
-networks:
-  proxy_2_zammad:
-    external:
-      name: proxy_2_apps
-
   zammad-backup:
     <<: *zammad-service
     command: ["zammad-backup"]
