@@ -22,9 +22,7 @@ services:
     image: zammad-local
 
 
-version: "3.8"
 
-services:
   zammad-nginx:
     environment:
       - VIRTUAL_HOST=ticket.lopinga.at
